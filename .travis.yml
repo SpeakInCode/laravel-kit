@@ -16,6 +16,7 @@ cache:
 
 before-script:
   - brew install php72 tree # remove this line
+  - bash ./install-composer.sh
   - bash ./zip.sh
 
 script:
