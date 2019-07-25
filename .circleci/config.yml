@@ -5,7 +5,7 @@ jobs:
       - image: electronuserland/builder:wine
     steps:
       - checkout
-      - run: apt-get update && apt-get install software-properties-common && apt-get update
+      - run: apt-get update && apt-get install software-properties-common -y && apt-get update
       - run: add-apt-repository -y ppa:ondrej/php && apt-get update && apt-get install tree php7.2 -y # remove this line
       - run: bash ./scripts/install-composer.sh
       - run: bash ./scripts/zip.sh
