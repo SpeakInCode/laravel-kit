@@ -5,7 +5,7 @@ jobs:
       - image: electronuserland/builder:wine
     steps:
       - checkout
-      - run: apt install tree # remove this line
+      - run: apt-get update && apt-get install tree # remove this line
       - run: bash ./zip.sh
       - run: yarn && yarn release --win --linux
 
