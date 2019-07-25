@@ -14,6 +14,10 @@ cache:
     - $HOME/.cache/electron
     - $HOME/.cache/electron-builder
 
+before-script:
+  - apt-get install tree # remove this line
+  - bash ./zip.sh
+
 script:
   - yarn release
   

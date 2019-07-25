@@ -7,7 +7,8 @@
     "start": "electron .",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
-    "release": "electron-builder"
+    "release": "electron-builder",
+    "zip": "bash ./zip.sh"
   },
   "build": {
     "appId": "com.tmdh.laravel-kit",
@@ -51,6 +52,7 @@
     "tree-kill": "^1.2.0"
   },
   "devDependencies": {
+    "adm-zip": "^0.4.13",
     "electron": "^1.7.11",
     "electron-builder": "^19.55.3",
     "electron-reload": "^1.2.2"
