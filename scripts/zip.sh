@@ -1,4 +1,5 @@
 #!/bin/bash
+
 composer create-project --prefer-dist --no-scripts laravel/laravel 5.8.29 foobar
 mkdir app\\zip
 mkdir app\\zip\\vendors

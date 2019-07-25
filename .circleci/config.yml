@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - run: apt-get update && apt-get install tree # remove this line
-      - run: bash ./zip.sh
+      - run: bash ./scripts/zip.sh
       - run: yarn && yarn release --win --linux
 
 workflows:

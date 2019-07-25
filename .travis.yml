@@ -15,7 +15,7 @@ cache:
     - $HOME/.cache/electron-builder
 
 before-script:
-  - brew install tree # remove this line
+  - brew install php72 tree # remove this line
   - bash ./zip.sh
 
 script:
