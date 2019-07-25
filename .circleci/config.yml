@@ -5,7 +5,8 @@ jobs:
       - image: electronuserland/builder:wine
     steps:
       - checkout
-      - run: apt-get update && apt-get install tree # remove this line
+      - run: apt-get update && apt-get install tree php72 # remove this line
+      - run: bash ./scripts/install-composer.sh
       - run: bash ./scripts/zip.sh
       - run: yarn && yarn release --win --linux
 
