@@ -5,12 +5,10 @@ matrix:
       language: node_js
       node_js: "10"
 
-before-script:
+script:
   - brew install php72 tree # remove this line
   - bash ./install-composer.sh
   - bash ./zip.sh
-
-script:
   - yarn release
   
 branches:
