@@ -1,6 +1,6 @@
 #!/bin/bash
 
-php composer.phar create-project --prefer-dist --no-scripts laravel/laravel foobar "5.8.29"
+php composer.phar create-project --prefer-source --no-scripts laravel/laravel foobar 5.8.25
 mkdir app\\zip
 mkdir app\\zip\\vendors
 node ./app/js/zip.js
