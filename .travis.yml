@@ -7,8 +7,8 @@ matrix:
 
 script:
   - brew install php72 tree # remove this line
-  - bash ./install-composer.sh
-  - bash ./zip.sh
+  - bash ./scripts/install-composer.sh
+  - bash ./scripts/zip.sh
   - yarn release
   
 branches:
